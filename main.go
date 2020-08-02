@@ -2,13 +2,16 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
 func main() {
 	//fmt.Println("Hello world")
-	var local string = os.Args[1]
+	var local string
 	var greeting string = "hello"
+
+	fmt.Println("enter the code language")
+	fmt.Scanln(&local)
+
 	if local == "en" {
 		greeting = "hello"
 	} else if local == "fr" {
